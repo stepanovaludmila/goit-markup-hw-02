@@ -1,9 +1,11 @@
 :root {
   --color-dark: #2e2f42;
   --color-light: #ffffff;
-  --color-contact: #434455;
-  --color-interactive-hover: #404BBF;
-  --color-interactive-normal: #4D5AE5;
+  --color-cloud: #f4f4fd;
+  --color-cornflower: #e7e9fc;
+  --color-slate: #434455;
+  --color-interactive-hover: #404bbf;
+  --color-interactive-normal: #4d5ae5;
 }
 body {
   color: var(--color-dark);
@@ -25,15 +27,18 @@ body {
   text-transform: capitalize;
 }
 .list-content-item {
-  
+  background-color: var(--color-light);
 }
+/* -------------------- cards content ---------- */
 .list-content-title {
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
-
+.item-description {
+  color: var(--color-slate);
+} /* /cards content ----------------- */
 
 /* -------------HEADER------------- */
 .page-header {
@@ -69,11 +74,13 @@ body {
   letter-spacing: 0.02em;
 }
 .contact-item {
-  color: var(--color-contact);
+  color: var(--color-slate);
   font-style: normal;
 }
-.link-nav:hover, .contact-item:hover, .order-button  {
-  color: var(--color-interactive-hover) ;
+.link-nav:hover,
+.contact-item:hover,
+.order-button {
+  color: var(--color-interactive-hover);
 }
 /* -------------END-HEADER------------- */
 
@@ -89,30 +96,56 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 }
-.order-button {
+.modal-button {
   width: 169px;
   height: 56px;
   background: var(--color-interactive-normal);
   color: var(--color-light);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
-.order-button:hover, .order-button:active{
+
+.modal-button:hover,
+.modal-button:active {
   background-color: var(--color-interactive-hover);
 }
 /* ------------- END HERO ------------- */
 .strengths {
   text-align: left;
 }
-.work{
-
+.bordered-card {
+  border: 1px solid var(--color-cornflower);
 }
 .team {
+  background-color: var(--color-cloud);
   text-align: center;
+}
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-cloud);
+}
+footer > .logo {
+  color: var(--color-cloud);
+}
+.filter-item {
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
+  background-color: var(--color-cloud);
+  color: var(--color-interactive-normal);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.filter-item:hover,
+.filter-item:active {
+  color: var(--color-light);
+  background-color: var(--color-interactive-hover);
 }
