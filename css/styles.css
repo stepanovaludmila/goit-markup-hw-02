@@ -143,6 +143,7 @@ footer > .logo {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  cursor: pointer;
 }
 .filter-item:hover,
 .filter-item:active {
