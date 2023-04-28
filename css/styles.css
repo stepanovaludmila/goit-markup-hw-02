@@ -89,9 +89,12 @@ body {
   font-style: normal;
 }
 .link-nav:hover, .link-nav:focus,
-.contact-item:hover, .contact-item:focus,
-.modal-button:hover, .modal-button:focus {
-  color: var(--color-interactive-hover);
+.contact-item:hover, .contact-item:focus {
+  color:  var(--color-interactive-hover);
+}
+.modal-button:hover,.modal-button:focus {
+  background-color: var(--color-interactive-hover);
+
 }
 /* -------------END-HEADER------------- */
 
