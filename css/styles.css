@@ -8,20 +8,21 @@
   --color-interactive-normal: #4d5ae5;
 }
 body {
-  color: var(--color-dark);
+  color: var(--color-slate);
+  background-color: var(--color-light);
   font-family: 'Roboto', sans-serif;
 }
 
-.list-semantic {
+.list {
   list-style: none;
 }
-.link-no-decor {
+.link {
   text-decoration: none;
 }
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -35,9 +36,13 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--color-dark);
 }
 .item-description {
   color: var(--color-slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
 } /* /cards content ----------------- */
 
 /* -------------HEADER------------- */
@@ -46,7 +51,7 @@ body {
 .page-nav {
 }
 .logo {
-  color: var(--color-dark);
+  color: var(--color-interactive-normal);
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -55,7 +60,7 @@ body {
   text-transform: uppercase;
 }
 .span-logo {
-  color: var(--color-interactive-normal);
+  color: var(--color-dark);
 }
 .menu-list {
   font-weight: 500;
@@ -65,9 +70,14 @@ body {
 }
 .link-nav {
   color: var(--color-dark);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .contacts {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -77,9 +87,9 @@ body {
   color: var(--color-slate);
   font-style: normal;
 }
-.link-nav:hover,
-.contact-item:hover,
-.order-button {
+.link-nav:hover, .link-nav:focus,
+.contact-item:hover, .contact-item:focus,
+.order-button:hover, .order-button:focus {
   color: var(--color-interactive-hover);
 }
 /* -------------END-HEADER------------- */
@@ -131,9 +141,10 @@ body {
   background-color: var(--color-dark);
   color: var(--color-cloud);
 }
-footer > .logo {
+.footer  .span-logo{
   color: var(--color-cloud);
 }
+/*Portfolio*/
 .filter-item {
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
@@ -143,6 +154,7 @@ footer > .logo {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
 .filter-item:hover,
@@ -150,3 +162,4 @@ footer > .logo {
   color: var(--color-light);
   background-color: var(--color-interactive-hover);
 }
+/*Portfolio END*/
