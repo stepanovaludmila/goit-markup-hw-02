@@ -26,6 +26,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--color-dark);
 }
 .list-content-item {
   background-color: var(--color-light);
@@ -89,7 +90,7 @@ body {
 }
 .link-nav:hover, .link-nav:focus,
 .contact-item:hover, .contact-item:focus,
-.order-button:hover, .order-button:focus {
+.modal-button:hover, .modal-button:focus {
   color: var(--color-interactive-hover);
 }
 /* -------------END-HEADER------------- */
@@ -120,11 +121,6 @@ body {
   align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
-}
-
-.modal-button:hover,
-.modal-button:active {
-  background-color: var(--color-interactive-hover);
 }
 /* ------------- END HERO ------------- */
 .strengths {
@@ -158,7 +154,7 @@ body {
   cursor: pointer;
 }
 .filter-item:hover,
-.filter-item:active {
+.filter-item:focus {
   color: var(--color-light);
   background-color: var(--color-interactive-hover);
 }
