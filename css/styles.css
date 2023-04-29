@@ -43,8 +43,13 @@ body {
   color: var(--color-slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
-
 } /* /cards content ----------------- */
+.footer-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
 /* -------------HEADER------------- */
 .page-header {
@@ -128,9 +133,6 @@ body {
 /* ------------- END HERO ------------- */
 .strengths {
   text-align: left;
-}
-.bordered-card {
-  border: 1px solid var(--color-cornflower);
 }
 .team {
   background-color: var(--color-cloud);
